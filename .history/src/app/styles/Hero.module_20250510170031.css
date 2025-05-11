@@ -1,0 +1,108 @@
+/* src/app/styles/Hero.module.css */
+.hero {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  margin-top: 80px;
+  overflow: hidden;
+}
+
+.heroImage {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+}
+
+.heroImage img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+.heroOverlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 2;
+}
+
+.heroContent {
+  text-align: center;
+  z-index: 3;
+  max-width: 1200px;
+  padding: 0 24px;
+  position: relative;
+}
+
+.heroText {
+  color: white;
+}
+
+.heroText h1 {
+  font-size: 4rem;
+  margin-bottom: 1rem;
+  text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+  font-weight: bold;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
+.heroText p {
+  font-size: 1.25rem;
+  margin-bottom: 2rem;
+  opacity: 0.9;
+  text-shadow: 1px 1px 2px rgba(0,0,0,0.5);
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.heroButton {
+  padding: 16px 40px;
+  font-size: 1.1rem;
+  background-color: #FFD700;
+  color: #000;
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+  font-weight: 700;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 15px rgba(255, 215, 0, 0.3);
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.heroButton:hover {
+  transform: translateY(-2px) scale(1.05);
+  box-shadow: 0 6px 25px rgba(255, 215, 0, 0.5);
+  background-color: #FFA500;
+}
+
+.heroButton:active {
+  transform: translateY(0) scale(1);
+}
+
+@media screen and (max-width: 768px) {
+  .heroText h1 {
+    font-size: 2.5rem;
+  }
+  
+  .heroText p {
+    font-size: 1rem;
+    margin-bottom: 1.5rem;
+  }
+  
+  .heroButton {
+    padding: 14px 32px;
+    font-size: 1rem;
+  }
+}
