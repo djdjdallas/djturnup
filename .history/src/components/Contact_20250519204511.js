@@ -51,9 +51,9 @@ const Contact = () => {
     };
 
     // Replace these with your actual EmailJS credentials from your account
-    const serviceID = "service_6qsconv"; // Get this from EmailJS dashboard
-    const templateID = "template_lw4zxyp"; // Get this from EmailJS dashboard
-    const userID = "-3erqZOf1mSXV6Lam"; // Get this from EmailJS dashboard (also called "Public Key")
+    const serviceID = "YOUR_SERVICE_ID"; // Get this from EmailJS dashboard
+    const templateID = "YOUR_TEMPLATE_ID"; // Get this from EmailJS dashboard
+    const userID = "YOUR_USER_ID"; // Get this from EmailJS dashboard (also called "Public Key")
 
     emailjs
       .send(serviceID, templateID, formattedData, userID)

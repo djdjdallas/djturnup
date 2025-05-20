@@ -23,8 +23,8 @@ const Footer = () => {
           <h4>Contact</h4>
           <ul>
             <li>Los Angeles, CA</li>
-            <li>Call: (818) 693-2296</li>
-            <li>dj.turnupmusic@gmail.com</li>
+            <li>(555) 123-4567</li>
+            <li>info@djturnup.com</li>
           </ul>
         </div>
       </div>
